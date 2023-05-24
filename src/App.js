@@ -25,7 +25,7 @@ export default function App() {
         <Sphere scale={0.25} position={[-4, 0, -2]} />
         <Sphere scale={0.65} position={[3.5, 0, -2]} />
         <Text position={[0, 4, -10]} font="/Inter-Regular.woff" fontSize={6}>
-          login
+          join us
           <meshStandardMaterial color="#aaa" toneMapped={false} />
         </Text>
         <AccumulativeShadows temporal frames={100} alphaTest={0.8} scale={12}>
@@ -74,7 +74,7 @@ function Model(props) {
 }
 
 function Input(props) {
-  const [text, set] = useState('hello world ...')
+  const [text, set] = useState('your email...')
   return (
     <group {...props}>
       <Text position={[-1.2, -0.022, 0]} anchorX="0px" font="/Inter-Regular.woff" fontSize={0.335} letterSpacing={-0.0}>
